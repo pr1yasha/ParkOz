@@ -1,0 +1,14 @@
+.map {
+    border-radius: 25px;
+}
+.sidebar {
+    padding-left: 10px;
+}
+
+.layout-container {
+    display: grid;
+    grid-template-columns: auto 25%;
+    /*grid-template-columns: auto 300px;*/
+    grid-column-gap: 30px;
+  }
+  
