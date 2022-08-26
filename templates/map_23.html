@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9e9f6aaf4637f793196fc198b3a59e85 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9e9f6aaf4637f793196fc198b3a59e85" ></div>
+        
+</body>
+<script>    
+    
+            var map_9e9f6aaf4637f793196fc198b3a59e85 = L.map(
+                "map_9e9f6aaf4637f793196fc198b3a59e85",
+                {
+                    center: [-37.8151207, 144.9684769],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 20,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_608c767934af7752b15e0c7b6adec381 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9e9f6aaf4637f793196fc198b3a59e85);
+        
+    
+            var marker_d42e65b2e117c8f1a668501e402079ca = L.marker(
+                [-37.8151207, 144.9684769],
+                {}
+            ).addTo(map_9e9f6aaf4637f793196fc198b3a59e85);
+        
+    
+            var icon_a29eed818c85e6a8826c76be94d5763c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d42e65b2e117c8f1a668501e402079ca.setIcon(icon_a29eed818c85e6a8826c76be94d5763c);
+        
+    
+        var popup_22bc0a760acb020725730213c4c1aa72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1108ab8769cde04093de7af4bde69fb4 = $(`<div id="html_1108ab8769cde04093de7af4bde69fb4" style="width: 100.0%; height: 100.0%;">You are here!</div>`)[0];
+            popup_22bc0a760acb020725730213c4c1aa72.setContent(html_1108ab8769cde04093de7af4bde69fb4);
+        
+
+        marker_d42e65b2e117c8f1a668501e402079ca.bindPopup(popup_22bc0a760acb020725730213c4c1aa72)
+        ;
+
+        
+    
+    
+            var marker_67af5fd844abe025838cb37ef533d0aa = L.marker(
+                [-37.815093369132136, 144.96903145876053],
+                {}
+            ).addTo(map_9e9f6aaf4637f793196fc198b3a59e85);
+        
+    
+            var icon_dbdd78f982ddea09990af1f892fd7961 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_67af5fd844abe025838cb37ef533d0aa.setIcon(icon_dbdd78f982ddea09990af1f892fd7961);
+        
+    
+        var popup_016a04aa9e1d122d8a8f0cbe0c1a7191 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9af335b44e9b6c624cff989fcf7c0d44 = $(`<div id="html_9af335b44e9b6c624cff989fcf7c0d44" style="width: 100.0%; height: 100.0%;">$7  105 Collins St, Melbourne VIC 3000, Australia</div>`)[0];
+            popup_016a04aa9e1d122d8a8f0cbe0c1a7191.setContent(html_9af335b44e9b6c624cff989fcf7c0d44);
+        
+
+        marker_67af5fd844abe025838cb37ef533d0aa.bindPopup(popup_016a04aa9e1d122d8a8f0cbe0c1a7191)
+        ;
+
+        
+    
+    
+            var marker_aa1782158a001233c78cfc157ce9dc8d = L.marker(
+                [-37.8155697, 144.9691638],
+                {}
+            ).addTo(map_9e9f6aaf4637f793196fc198b3a59e85);
+        
+    
+            var icon_270db029b9ff2e06d4fe7105d8a1c6d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-down", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_aa1782158a001233c78cfc157ce9dc8d.setIcon(icon_270db029b9ff2e06d4fe7105d8a1c6d4);
+        
+    
+        var popup_61444bf3b7649f5aabfb5d76b32e19a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_741d729e016caaa07920c1fac2e1ae83 = $(`<div id="html_741d729e016caaa07920c1fac2e1ae83" style="width: 100.0%; height: 100.0%;">$6  161 Collins Street Featured nearby places: Harry Potter and the Cursed Child Parking, Degraves Street, National Gallery of Victoria</div>`)[0];
+            popup_61444bf3b7649f5aabfb5d76b32e19a3.setContent(html_741d729e016caaa07920c1fac2e1ae83);
+        
+
+        marker_aa1782158a001233c78cfc157ce9dc8d.bindPopup(popup_61444bf3b7649f5aabfb5d76b32e19a3)
+        ;
+
+        
+    
+    
+            var marker_70ad5ca3834efe3e6ebb826a1eab8015 = L.marker(
+                [-37.8139145, 144.9688622],
+                {}
+            ).addTo(map_9e9f6aaf4637f793196fc198b3a59e85);
+        
+    
+            var icon_07c6d8f7bbe9cd8b8c705687bbcfebe1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-down", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_70ad5ca3834efe3e6ebb826a1eab8015.setIcon(icon_07c6d8f7bbe9cd8b8c705687bbcfebe1);
+        
+    
+        var popup_08fb63dc16577f44fd7847e5b1eb5f84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_164d51a144e396a59e0e2b49c9c433db = $(`<div id="html_164d51a144e396a59e0e2b49c9c433db" style="width: 100.0%; height: 100.0%;">$15  120 Collins Street Featured nearby places: Harry Potter and the Cursed Child Parking, Degraves Street, National Gallery of Victoria</div>`)[0];
+            popup_08fb63dc16577f44fd7847e5b1eb5f84.setContent(html_164d51a144e396a59e0e2b49c9c433db);
+        
+
+        marker_70ad5ca3834efe3e6ebb826a1eab8015.bindPopup(popup_08fb63dc16577f44fd7847e5b1eb5f84)
+        ;
+
+        
+    
+    
+            var marker_c42075f6e3991641bf4422bbb50e2282 = L.marker(
+                [-37.8128209, 144.9680257],
+                {}
+            ).addTo(map_9e9f6aaf4637f793196fc198b3a59e85);
+        
+    
+            var icon_135745a9094ab6e6dbe58c8a288ba55b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-down", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c42075f6e3991641bf4422bbb50e2282.setIcon(icon_135745a9094ab6e6dbe58c8a288ba55b);
+        
+    
+        var popup_70c3693bbb675058f6224d181224b80d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2837d7b6b66367bb13b3fea9bd1e6a25 = $(`<div id="html_2837d7b6b66367bb13b3fea9bd1e6a25" style="width: 100.0%; height: 100.0%;">$6  Russell Street , Melbourne Featured nearby places: Harry Potter and the Cursed Child Parking, Degraves Street, Melbourne Park</div>`)[0];
+            popup_70c3693bbb675058f6224d181224b80d.setContent(html_2837d7b6b66367bb13b3fea9bd1e6a25);
+        
+
+        marker_c42075f6e3991641bf4422bbb50e2282.bindPopup(popup_70c3693bbb675058f6224d181224b80d)
+        ;
+
+        
+    
+    
+            var marker_ee0d16860adb31c6ff436c8015bdbc2d = L.marker(
+                [-37.815598, 144.971982],
+                {}
+            ).addTo(map_9e9f6aaf4637f793196fc198b3a59e85);
+        
+    
+            var icon_11326cf97dd30c2accd3e5d1a29775ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-down", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ee0d16860adb31c6ff436c8015bdbc2d.setIcon(icon_11326cf97dd30c2accd3e5d1a29775ae);
+        
+    
+        var popup_4b876896b461cec12eed4e5364f4ea65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11018fc88796b951dc93c436bcf102ff = $(`<div id="html_11018fc88796b951dc93c436bcf102ff" style="width: 100.0%; height: 100.0%;">$6  11 Exhibition Street, Melbourne Featured nearby places: Harry Potter and the Cursed Child Parking, Degraves Street, National Gallery of Victoria</div>`)[0];
+            popup_4b876896b461cec12eed4e5364f4ea65.setContent(html_11018fc88796b951dc93c436bcf102ff);
+        
+
+        marker_ee0d16860adb31c6ff436c8015bdbc2d.bindPopup(popup_4b876896b461cec12eed4e5364f4ea65)
+        ;
+
+        
+    
+</script>
